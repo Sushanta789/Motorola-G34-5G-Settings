@@ -1,5 +1,5 @@
 let enteredPIN = '';
-const correctPIN = '1234'; // Set your PIN here
+const correctPIN = '5629'; // Set your PIN here
 const pinDisplay = document.getElementById('pinDisplay');
 const message = document.getElementById('message');
 
