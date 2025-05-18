@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Connected Devices</title>
+  <link rel="stylesheet" href="connected.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Connected Devices</h2>
+
+    <div class="setting-button" onclick="pairDevice()">+ Pair New Device</div>
+
+    <div class="section-title">Saved Devices</div>
+    <div id="deviceList" class="device-list">
+      <div class="device-item">Bluetooth Speaker</div>
+      <div class="device-item">Smart Watch</div>
+    </div>
+    <div class="see-all" onclick="seeAll()">See All</div>
+
+    <div class="setting-option">Connection Preferences</div>
+    <div class="setting-option">Smart Connect</div>
+  </div>
+
+  <script src="connected.js"></script>
+</body>
+</html>

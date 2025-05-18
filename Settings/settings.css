@@ -1,0 +1,81 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Settings Page */
+.settings-page {
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.settings-page h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Settings list styles */
+.settings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.setting-item {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.setting-item span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.setting-item:hover {
+  transform: scale(1.05);
+  background-color: #e0e0e0;
+}
+
+.setting-item:active {
+  transform: scale(1);
+}
+
+/* Page transition animation */
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+/* Mobile responsive design */
+@media screen and (max-width: 600px) {
+  .setting-item {
+    padding: 12px;
+  }
+
+  #search {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

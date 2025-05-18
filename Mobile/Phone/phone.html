@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📱 Phone App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="phone-container">
+    <div class="phone-header">
+      <h1>📱 Phone</h1>
+    </div>
+    <div class="phone-screen">
+      <div id="dialed-number" class="dialed-number">Enter a number...</div>
+    </div>
+    <div class="phone-keypad">
+      <button class="key" onclick="pressKey('1')">1</button>
+      <button class="key" onclick="pressKey('2')">2</button>
+      <button class="key" onclick="pressKey('3')">3</button>
+      <button class="key" onclick="pressKey('4')">4</button>
+      <button class="key" onclick="pressKey('5')">5</button>
+      <button class="key" onclick="pressKey('6')">6</button>
+      <button class="key" onclick="pressKey('7')">7</button>
+      <button class="key" onclick="pressKey('8')">8</button>
+      <button class="key" onclick="pressKey('9')">9</button>
+      <button class="key" onclick="pressKey('*')">*</button>
+      <button class="key" onclick="pressKey('0')">0</button>
+      <button class="key" onclick="pressKey('#')">#</button>
+      <button class="key clear" onclick="clearDialer()">Clear</button>
+      <button class="key call" onclick="makeCall()">Call</button>
+    </div>
+    <div class="contacts">
+      <h2>Contacts</h2>
+      <ul id="contacts-list">
+        <!-- Example contact list -->
+        <li onclick="dialContact('John Doe', '555-1234')">John Doe - 555-1234</li>
+        <li onclick="dialContact('Jane Smith', '555-5678')">Jane Smith - 555-5678</li>
+        <li onclick="dialContact('Alice Brown', '555-9876')">Alice Brown - 555-9876</li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

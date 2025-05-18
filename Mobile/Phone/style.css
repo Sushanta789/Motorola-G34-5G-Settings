@@ -1,0 +1,88 @@
+/* Basic phone app styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.phone-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  padding: 20px;
+}
+
+.phone-header h1 {
+  text-align: center;
+}
+
+.phone-screen {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dialed-number {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.phone-keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.key {
+  padding: 20px;
+  font-size: 20px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.key:hover {
+  background-color: #ddd;
+}
+
+.key.clear {
+  background-color: #ff6347;
+  color: white;
+}
+
+.key.call {
+  background-color: #4CAF50;
+  color: white;
+  grid-column: span 3;
+}
+
+.contacts {
+  margin-top: 20px;
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts li {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.contacts li:hover {
+  background-color: #ddd;
+}

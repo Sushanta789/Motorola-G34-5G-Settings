@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Security & Privacy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Security & Privacy</h2>
+
+    <h3>Review Settings</h3>
+    <div class="setting-item" onclick="speak('Check security settings')">Check security settings</div>
+    <div class="setting-item" onclick="speak('Scan device')">Scan device</div>
+
+    <h3>App Security</h3>
+    <div class="setting-item toggle" onclick="toggleItem(this)">Play Protect scanning: <span>On</span></div>
+
+    <h3>Device Unlock</h3>
+    <div class="setting-item" onclick="ScreenLock('Screen Lock')">Screen Lock</div>
+    <div class="setting-item" onclick="speak('Fingerprint')">Fingerprint</div>
+    <div class="setting-item" onclick="speak('Face Unlock')">Face Unlock</div>
+    <div class="setting-item" onclick="speak('Theft Protection')">Theft Protection</div>
+
+    <h3>Account Security</h3>
+    <div class="setting-item" onclick="speak('Recommended actions found')">Recommended actions found</div>
+
+    <h3>Device Finders</h3>
+    <div class="setting-item" onclick="speak('Find My Device')">Find My Device</div>
+
+    <h3>System and Updates</h3>
+    <div class="setting-item" onclick="speak('System Updates')">System Updates</div>
+
+    <h3>Privacy</h3>
+    <div class="setting-item" onclick="speak('Privacy Controls')">Privacy Controls</div>
+    <div class="setting-item" onclick="speak('Permissions Control')">Permissions Control</div>
+    <div class="setting-item" onclick="speak('Privacy Dashboard')">Privacy Dashboard</div>
+
+    <h3>Other Settings</h3>
+    <div class="setting-item" onclick="speak('More security and privacy')">More Security & Privacy</div>
+    <div class="setting-item" onclick="speak('Autofill')">Autofill</div>
+    <div class="setting-item" onclick="speak('Notifications and more')">Notifications and More</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

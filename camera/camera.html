@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📸 Camera</title>
+  <link rel="stylesheet" href="camera.css" />
+</head>
+<body>
+  <div class="camera-container">
+    <h1>📸 Camera</h1>
+    <div class="camera-screen">
+      <video id="video" autoplay></video>
+      <canvas id="canvas" style="display:none;"></canvas>
+    </div>
+    <div class="controls">
+      <button id="capture">Capture</button>
+      <button id="toggle-camera">Switch Camera</button>
+      <button id="save">Save</button>
+    </div>
+    <div class="photo-preview">
+      <h3>Captured Image:</h3>
+      <img id="photo" style="display:none; max-width: 100%;" />
+    </div>
+  </div>
+
+<script src="camera.js"></script>
+</body>
+</html>

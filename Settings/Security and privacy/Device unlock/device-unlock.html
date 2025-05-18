@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Device Unlock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Device Unlock</h2>
+
+    <div class="setting-item" onclick="speak('Screen lock PIN enabled')">
+      🔒 Screen Lock: <span>PIN</span>
+    </div>
+
+    <div class="setting-item" onclick="speak('Fingerprint added')">
+      🧬 Fingerprint: <span>Fingerprint added</span>
+    </div>
+
+    <div class="setting-item" onclick="speak('Face unlock enabled')">
+      😊 Face Unlock: <span>Face added</span>
+    </div>
+
+    <div class="setting-item" onclick="speak('Theft protection is on. The screen will lock if theft is detected')">
+      🛡️ Theft Protection:<br>
+      <small>Lock device's screen if theft is detected</small>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

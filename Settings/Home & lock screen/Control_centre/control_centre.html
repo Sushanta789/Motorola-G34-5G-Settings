@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Control Centre</title>
+  <link rel="stylesheet" href="control_centre.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Control Centre</h2>
+
+    <div class="setting-item" onclick="handleClick('Classic style')">
+      <strong>Classic style</strong><br/>
+      Swipe down from the top of the screen to open quick settings and notifications.
+    </div>
+
+    <div class="setting-item" onclick="handleClick('Modern style')">
+      <strong>Modern style</strong><br/>
+      Swipe down from the top left of the screen to open notifications; swipe down from the top right for quick settings.
+    </div>
+
+    <div class="setting-item" onclick="handleClick('Lock screen access')">
+      <strong>Lock screen access</strong><br/>
+      Allow access to quick settings and the notifications drawer on the lock screen.
+    </div>
+  </div>
+
+  <script src="control_centre.js"></script>
+</body>
+</html>

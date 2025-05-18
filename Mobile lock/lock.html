@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enter PIN</title>
+  <link rel="stylesheet" href="lock.css" />
+</head>
+<body>
+  <div class="lock-screen">
+    <h2>🔐 Enter PIN</h2>
+    <div class="pin-display" id="pinDisplay">____</div>
+    <div class="keypad">
+      <button onclick="pressKey('1')">1</button>
+      <button onclick="pressKey('2')">2</button>
+      <button onclick="pressKey('3')">3</button>
+      <button onclick="pressKey('4')">4</button>
+      <button onclick="pressKey('5')">5</button>
+      <button onclick="pressKey('6')">6</button>
+      <button onclick="pressKey('7')">7</button>
+      <button onclick="pressKey('8')">8</button>
+      <button onclick="pressKey('9')">9</button>
+      <button onclick="clearPIN()">←</button>
+      <button onclick="pressKey('0')">0</button>
+      <button onclick="submitPIN()">OK</button>
+    </div>
+    <div class="message" id="message"></div>
+  </div>
+
+  <script src="lock.js"></script>
+</body>
+</html>

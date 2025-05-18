@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #1a1a1a;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.lock-screen {
+  text-align: center;
+}
+
+.pin-display {
+  font-size: 32px;
+  letter-spacing: 10px;
+  margin: 20px 0;
+  background: #333;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 200px;
+  margin: 0 auto 20px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.keypad button {
+  font-size: 20px;
+  padding: 15px;
+  background: #444;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: background 0.2s;
+}
+
+.keypad button:hover {
+  background: #666;
+}
+
+.message {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #f44336;
+}

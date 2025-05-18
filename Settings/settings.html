@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings</title>
+  <link rel="stylesheet" href="settings.css" />
+</head>
+<body>
+  <div class="settings-page">
+    <h2>Settings</h2>
+    
+    <input type="text" id="search" placeholder="Search settings..." oninput="filterSettings()" />
+
+    <div id="settingsList" class="settings-list">
+      <div class="setting-item" onclick="openPage('Network/network.html')">
+        🌐 <span>Network & Internet</span>
+      </div>
+      <div class="setting-item" onclick="openPage('connected-devices/connected.html')">
+        🔗 <span>Connected Devices</span>
+      </div>
+      <div class="setting-item">
+        🎨 <span>Personalise</span>
+      </div>
+      <div class="setting-item" onclick="openPage('display.html')">
+        💡 <span>Display</span>
+      </div>
+      <div class="setting-item" onclick="openPage('Home &amp; lock screen/home_lock.html')">
+        🏠 <span>Home & Lock Screen</span>
+      </div>
+      <div class="setting-item">
+        🔊 <span>Sound & Vibration</span>
+      </div>
+      <div class="setting-item">
+        🔔 <span>Notifications</span>
+      </div>
+      <div class="setting-item">
+        🤳 <span>Gestures</span>
+      </div>
+      <div class="setting-item">
+        🔋 <span>Battery</span>
+      </div>
+      <div class="setting-item">
+        💾 <span>Storage</span>
+      </div>
+      <div class="setting-item">
+        📍 <span>Location</span>
+      </div>
+      <div class="setting-item">
+        ♿ <span>Accessibility</span>
+      </div>
+      <div class="setting-item">
+        📱 <span>Apps</span>
+      </div>
+      <div class="setting-item">
+        🔐 <span>Passwords, Passkeys & Account</span>
+      </div>
+      <div class="setting-item" onclick="openPage('Security and privacy/security_privacy.html')">
+        🛡️ <span>Security & Privacy</span>
+      </div>
+      <div class="setting-item">
+        🚨 <span>Safety & Emergency</span>
+      </div>
+      <div class="setting-item">
+        👨‍👩‍👧 <span>Digital Wellbeing & Parental</span>
+      </div>
+      <div class="setting-item">
+        🧠 <span>Google</span>
+      </div>
+      <div class="setting-item">
+        📲 <span>System Update</span>
+      </div>
+      <div class="setting-item">
+        ⭐ <span>Rating & Feedback</span>
+      </div>
+      <div class="setting-item">
+        ❓ <span>Help</span>
+      </div>
+      <div class="setting-item">
+        ⚙️ <span>System</span>
+      </div>
+      <div class="setting-item">
+        📞 <span>About Phone</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>

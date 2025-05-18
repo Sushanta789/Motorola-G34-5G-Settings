@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f0f0;
+}
+
+.container {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  animation: fadeInUp 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  cursor: pointer;
+}
+
+.setting-item {
+  background: #f9f9f9;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  animation: fadeIn 0.3s ease-in-out;
+  font-size: 16px;
+}
+
+.setting-item:hover {
+  background: #e0f7fa;
+}
+
+.setting-item span {
+  float: right;
+  font-weight: bold;
+}
+
+small {
+  display: block;
+  color: #777;
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
